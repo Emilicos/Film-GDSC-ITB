@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<head>
+    <title> Motion </title>
+    <link rel = "icon" type = image/png href = "./logo.png" sizes = 16x16>
+    <link rel = "stylesheet" href = "./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class = "header-section">
+        <div class="container">
+            <img id = "image-logo" src = 'logo.png' alt = "Logo">
+            <div class="title">
+                <a> Motion </a>
+            </div>
+            <div class = "quote">
+                <a> Let's watch <span> movies </span> together! </a>
+            </div>
+        </div>
+    </header>
+
+    <div class = "main-section">
+        <div class="container">
+            <div class="content">
+
+                <div class="film squid-game" onclick="togglePopup1()">
+                    <h3> Squid-game </h3>
+                    <p> This is a film </p>
+                </div>
+
+                <div class="film spider-man" onclick="togglePopup2()">
+                    <h3> Spider Man  </h3>
+                    <p> This is a film </p>
+                </div>
+
+                <div class="film jujutsu-kaisen" onclick="togglePopup3()">
+                    <h3> Jujutsu Kaisen </h3>
+                    <p> This is a film </p>
+                </div>
+
+                <div class="film sao" onclick="togglePopup4()">
+                    <h3> Sword Art Online </h3>
+                    <p> This is a film </p>
+                </div>
+                
+                <div class="film demon-slayer" onclick="togglePopup5()" >
+                    <h3> Demon Slayer </h3>
+                    <p> This is a film </p>
+                </div>
+
+                <div class="film james-bond" onclick="togglePopup6()">
+                    <h3> James-Bond </h3>
+                    <p> This is a film </p>
+                </div>
+
+                <div class="film hospital-playlist" onclick="togglePopup7()">
+                    <h3> Hospital Playlist </h3>
+                    <p> This is a film </p>
+                </div>
+
+                <div class="film tenki-no-ko" onclick="togglePopup8()">
+                    <h3> Weathering with You </h3>
+                    <p> This is a film </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="popup" id = "popup-1">
+        <div class="overlay"></div>
+        <div class="main-content">
+            <div class="close-btn1" onclick="togglePopup1()">&times;</div>
+            <h2> Squid-game </h2>
+            <p> Sinopsis: </p>
+            <p> Squid Game menceritakan tentang orang-orang yang harus bertahan hidup paling lama dalam permainan agar bisa mendapatkan hadiah 45,6 miliar won </p>
+            <p> Rating: </p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+
+            <div class = 'deskripsi squid-game-alt'> 
+                <p> Deskripsi movie </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup" id = "popup-2">
+        <div class="overlay"></div>
+        <div class="main-content">
+            <div class="close-btn2" onclick="togglePopup2()">&times;</div>
+            <h2> Spider Man: No Way Home </h2>
+            <p> Sinopsis: </p>
+            <p> Dengan kepergian Tony Stark, Peter Parker pun harus meminta bantuan Doctor Strange agar semua orang bisa melupakan identitasnya sebagai manusia laba-laba </p>
+            <p> Rating: </p>
+
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+
+            <div class = 'deskripsi spider-man-alt'> 
+                <p> Deskripsi movie </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup" id = "popup-3">
+        <div class="overlay"></div>
+        <div class="main-content">
+            <div class="close-btn3" onclick="togglePopup3()">&times;</div>
+            <h2> Jujutsu Kaisen 0 </h2>
+            <p> Sinopsis: </p>
+            <p> Yuuta Okkotsu, seorang pemuda yang duduk di bangku SMA. Di sekolah, ia kerap merasa gugup karena menderita masalah serius, sebab kekasih masa kecilnya yaitu Rika, telah berubah menjadi kutukan yang tidak mau meninggalkannya sendirian. </p>
+
+            <p> Rating: </p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+
+            <div class = 'deskripsi jujutsu-kaisen-alt'> 
+                <p> Deskripsi movie </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup" id = "popup-4">
+        <div class="overlay"></div>
+        <div class="main-content">
+            <div class="close-btn4" onclick="togglePopup4()">&times;</div>
+            <h2> Sword Art Online: Progressive </h2>
+            <p> Sinopsis: </p>
+            <p> Film ini mengambil latar belakang masa depan pada tahun 2022. Sosok Akihiko Kayaba yang menciptakan sebuah virtual reality massively multiplayer online role-playing game. Dalam hal ini ada sebuah mesin Nerve gear yang merupakan helm Full Drive generasi kedua. </p>
+
+            <p> Rating: </p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+
+            <div class = 'deskripsi sao-alt'> 
+                <p> Deskripsi movie </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup" id = "popup-5">
+        <div class="overlay"></div>
+        <div class="main-content">
+            <div class="close-btn5" onclick="togglePopup5()">&times;</div>
+            <h2> Demon Slayer: Mugen Train </h2>
+            <p> Sinopsis: </p>
+            <p> Tanjiro Kamado, Inosuke Hashibira, dan Zenitsu Agatsuma sedang di dalam Kereta Infinity dalam misi baru dengan Pilar Api, Kyojuro Rengoku demi mengalahkan iblis yang telah menyiksa orang-orang dan membunuh pembunuh iblis yang menentangnya! </p>
+
+            <p> Rating: </p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+
+            <div class = 'deskripsi demon-slayer-alt'> 
+                <p> Deskripsi movie </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup" id = "popup-6">
+        <div class="overlay"></div>
+        <div class="main-content">
+            <div class="close-btn6" onclick="togglePopup6()">&times;</div>
+            <h2> James Bond: No Time To Die </h2>
+            <p> Sinopsis: </p>
+            <p> James Bond yang sudah pensiun terinterupsi oleh Felix Leiter, teman lamanya yang muncul dan meminta bantuannya. Misi menyelamatkan seorang ilmuwan yang diculik ternyata lebih berisiko dari dugaan, menghantarkan Bond pada jejak seorang penjahat misterius bersenjatakan teknologi baru nan mematikan. </p>
+
+            <p> Rating: </p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+
+
+            <div class = 'deskripsi james-bond-alt'> 
+                <p> Deskripsi movie </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup" id = "popup-7">
+        <div class="overlay"></div>
+        <div class="main-content">
+            <div class="close-btn7" onclick="togglePopup7()">&times;</div>
+            <h2> Hospital Playlist </h2>
+            <p> Sinopsis: </p>
+            <p> Hospital Playlist bercerita tentang lima dokter yang telah berteman sejak mereka memasuki sekolah kedokteran pada tahun 1999. </p>
+
+            <p> Rating: </p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+
+            <div class = 'deskripsi hospital-playlist-alt'> 
+                <p> Deskripsi movie </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup" id = "popup-8">
+        <div class="overlay"></div>
+        <div class="main-content">
+            <div class="close-btn8" onclick="togglePopup8()">&times;</div>
+            <h2> Weathering with you </h2>
+            <p> Sinopsis: </p>
+            <p> Tenki no Ko bercerita tentang seorang anak laki-laki dan perempuan yang mengetahui bahwa takdirnya menjadi berantakan saat keseimbangan cuaca menjadi kacau. Hotaka Morisaki, siswa SMA yang berlari keluar rumahnya dari sebuah pulau terpencil di Jepang, bertemu seorang gadis bernama Hira Amano. </p>
+
+            <p> Rating: </p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+
+            <div class = 'deskripsi tenki-no-ko-alt'> 
+                <p> Deskripsi movie </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-sect"> Made by: Alvaro Austin </div>
+    </footer>
+</body>
+
+<script src="./main.js"></script>

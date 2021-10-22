@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --main-color: #e98b2c;
+    --dark: #1b1b22;
+    --dark-light:#32323a;
+    --white: #ffffff;
+    --white-light: #c8c8c8;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.header-section{
+    width:100%;
+    height:80px;
+    background-color: var(--main-color);
+    color: var(--dark);
+    padding:20px;
+    font-size:24px
+}
+
+.header-section .container{
+    width:1000px;
+    height: 100%;
+    display:block;
+    margin: 0 auto;
+}
+
+.header-section img{
+    height: 100%;
+    display: table;
+    float:left;
+}
+
+.title{
+    float:left;
+    height: 100%;
+    display:table-cell;
+    font-weight: bold;
+}
+
+.quote{
+    height:100%;
+    float:right;
+    padding: 0px 20px;
+}
+.quote span{
+    font-weight: bold;
+}
+
+.main-section{
+    background-color: var(--dark);
+    height:1000px;
+}
+
+.film{
+    width:  300px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 15px 60px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 30px 15px; 
+    background-position: center;
+    background-size: cover;
+    text-indent: -99999999px;
+    transition: transform 0.5s;
+}
+
+.squid-game{
+    background-image: url(./squid-game.jpg);
+}
+
+.sao{
+    background-image: url(./sao.jpeg);
+}
+
+.spider-man{
+    background-image: url(./spider-man.jpg);
+}
+
+.jujutsu-kaisen{
+    background-image: url(./jujutsu-kaisen.png);
+}
+
+.demon-slayer{
+    background-image: url(./demon-slayer.jpg);
+}
+
+.james-bond{
+    background-image: url(./james-bond.jpg);
+}
+
+.hospital-playlist{
+    background-image: url(./hospital-playlist.jpg);
+}
+
+.tenki-no-ko{
+    background-image: url(./tenki-no-ko.jpg);
+}
+
+.film:hover{
+    transform:translateY(-20px);
+}
+
+.popup .overlay{
+    position:fixed;
+    top: 0px;
+    left:0px;
+    width:100vw;
+    height:100vh; 
+    background:rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .main-content{
+    position:absolute;
+    top:60%;
+    left:50%;
+    transform:translate(-50%, -50%) scale(0);
+    background:var(--dark);
+    width:450px;
+    height:500px;
+    z-index: 2;
+    text-align: center;
+    padding:20px;
+    box-sizing: border-box;
+    color:var(--white);
+    font-size: 15px;
+}
+
+.popup .close-btn1, .close-btn2, .close-btn3, .close-btn4, .close-btn5, .close-btn6, .close-btn7, .close-btn8{
+    cursor: pointer;
+    position: absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background:#222;
+    color:#ffffff;
+    font-size:24px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.popup.active .overlay{
+    display:block;
+}
+
+.popup.active .main-content{
+    transition: all 300ms ease-in-out;
+    transform:translate(-50%, -50%) scale(1);
+}
+
+.popup .close-btn1:hover, .close-btn2:hover, .close-btn3:hover, .close-btn4:hover, .close-btn5:hover, .close-btn6:hover, .close-btn7:hover, .close-btn8:hover{
+    background: rgba(0, 0, 0, 0.5)
+}
+.footer-sect{
+    background-color: var(--main-color);
+    height:75px;
+    text-align: center;
+    font-weight: bold;
+    padding-top:20px;
+    font-size:24px;
+}
+
+::-webkit-scrollbar{
+    width:5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--dark);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+
+.deskripsi{
+    height:250px;
+    background-size:cover;
+    bottom:15px;
+    background-position: center;
+    margin-top: 10px;
+    margin-left:100px;
+    width:200px;
+    text-indent: -99999999px;
+    border-radius: 15px;
+}
+
+.squid-game-alt{
+    background-image:url(./squid-game.jpg);
+}
+
+.spider-man-alt{
+    background-image:url(./spider-man.jpg);
+}
+
+.jujutsu-kaisen-alt{
+    background-image:url(./jujutsu-kaisen.png);
+}
+
+.sao-alt{
+    background-image:url(./sao.jpeg);   
+}
+
+.demon-slayer-alt{
+    background-image:url(./demon-slayer.jpg);
+}
+
+.james-bond-alt{
+    background-image: url(./james-bond.jpg)
+}
+
+.hospital-playlist-alt{
+    background-image:url(./hospital-playlist.jpg);
+}
+
+.tenki-no-ko-alt{
+    background-image:url(./tenki-no-ko.jpg);
+}
+
+.main-content p, span{
+    padding-top:10px;
+}
+
+.fa-star{
+    position:relative;
+}
+
+.checked{
+    color:orange;
+}
