@@ -1,241 +1,372 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title> Motion </title>
-    <link rel = "icon" type = image/png href = "./logo.png" sizes = 16x16>
-    <link rel = "stylesheet" href = "./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" type = image/png href = "logo.png" sizes = 36x36>
+    <link rel="stylesheet" href="style.css" />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3fd13f479b.js" crossorigin="anonymous"></script>
+    <title> GDSC ITB </title>
 </head>
 <body>
-    <header class = "header-section">
+    <header class="header-section">
         <div class="container">
-            <img id = "image-logo" src = 'logo.png' alt = "Logo">
-            <div class="title">
-                <a> Motion </a>
-            </div>
-            <div class = "quote">
-                <a> Let's watch <span> movies </span> together! </a>
+            <div class="bar">
+                <div class="nav-bar">
+                    <div class="title-logo">
+                        <h1> FILM<span>OO</span>N</h1>
+                    </div>
+                    <ul>
+                        <li> <a href="#">Home</a> </li>
+                        <li> <a href="#">Movies</a> </li>   
+                        <li> <a href="#">Wishlist</a> </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
 
-    <div class = "main-section">
+    <section class = 'sidebar'> 
         <div class="container">
-            <div class="content">
-
-                <div class="film squid-game" onclick="togglePopup1()">
-                    <h3> Squid-game </h3>
-                    <p> This is a film </p>
+            <nav> 
+                <ul>
+                    <li>
+                        <a class = 'a'>
+                            <i class="material-icons">movie</i> Videos 
+                        </a>
+                        <a class = 'a'>
+                            <i class="material-icons">videocam</i> Movies & Shows
+                        </a>
+                        <a class = 'a'>
+                            <i class="material-icons">card_giftcard</i> Premium Contents
+                        </a>
+                        <a class = 'a'>
+                            <i class="material-icons">play_arrow</i> Live
+                        </a>
+                        <a class = 'a'>
+                            <i class="material-icons">receipt</i> Subscriptions
+                        </a>
+                        <a class = 'a'>
+                            <i class="material-icons">perm_media</i> Library
+                        </a>
+                        <a class = 'a'>
+                            <i class="material-icons">link</i> Linked Videos
+                        </a>
+                        <a class = 'a'>
+                            <i class="material-icons">watch_later</i> Watch Later
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="movies">
+        <div class="container">
+                <h2 class = 'cant-see'> <i class="fa-regular fa-camera-movie"></i> Movies <i class="fa-regular fa-camera-movie"></i> </h2>
+                <div class = 'mov-sect'>
+                    <div class = 'xd1 xd'>
+                        <div class="film angry"> </div>
+                        <h2> 12 Angry Men </h2>
+                        <button> <i class="fas fa-plus"> </i> Wishlist </button>
+                        <div class = 'do-something'>
+                            <a href="https://www.youtube.com/watch?v=_13J_9B5jEk"> Trailer Vid </a>
+                            <a onclick = 'toggleBox1()'> Description </a>
+                        </div>                    
+                    </div>
+                    <div class = 'xd2 xd'>
+                        <div class="film dark-knight"></div>
+                        <h2> The Dark Knight </h2>
+                        <button> <i class="fas fa-plus"> </i> Wishlist </button>
+                        <div class = 'do-something'>
+                            <a href="https://www.youtube.com/watch?v=EXeTwQWrcwY"> Trailer Vid </a>
+                            <a onclick = 'toggleBox2()'> Description </a>
+                        </div>                    
+                    </div>
+                    <div class = 'xd3 xd'>
+                        <div class="film godfather"></div>
+                        <h2> The Godfather </h2>
+                        <button> <i class="fas fa-plus"> </i> Wishlist </button>
+                        <div class = 'do-something'>
+                            <a href="https://www.youtube.com/watch?v=sY1S34973zA"> Trailer Vid </a>
+                            <a onclick = 'toggleBox3()'> Description </a>
+                        </div>                    
+                    </div>
+                    <div class = 'xd4 xd'>
+                        <div class="film grave-of-fireflies"></div>
+                        <h2> Grave of Fireflies </h2>
+                        <button> <i class="fas fa-plus"> </i> Wishlist </button>
+                        <div class = 'do-something'>
+                            <a href="https://www.youtube.com/watch?v=4vPeTSRd580"> Trailer Vid </a>
+                            <a onclick = 'toggleBox4()'> Description </a>
+                        </div>                    
+                    </div>
+                    <div class = 'xd5 xd'>
+                        <div class="film lord"></div>
+                        <h2> Lord of the Ring </h2>
+                        <button> <i class="fas fa-plus"> </i> Wishlist </button>
+                        <div class = 'do-something'>
+                            <a href="https://www.youtube.com/watch?v=V75dMMIW2B4"> Trailer Vid </a>
+                            <a onclick = 'toggleBox5()'> Description </a>
+                        </div>                    
+                    </div>
+                    <div class = 'xd6 xd'>
+                        <div class="film matrix"></div>
+                        <h2> Matrix </h2>
+                        <button> <i class="fas fa-plus"> </i> Wishlist </button>
+                        <div class = 'do-something'>
+                            <a href="https://www.youtube.com/watch?v=vKQi3bBA1y8"> Trailer Vid </a>
+                            <a onclick = 'toggleBox6()'> Description </a>
+                        </div>                    
+                    </div>
+                    <div class = 'xd7 xd'>
+                        <div class="film parasite"></div>
+                        <h2> Parasite </h2>
+                        <button> <i class="fas fa-plus"> </i> Wishlist </button>
+                        <div class = 'do-something'>
+                            <a href="https://www.youtube.com/watch?v=5xH0HfJHsaY"> Trailer Vid</a>
+                            <a onclick = 'toggleBox7()'> Description </a>
+                        </div>                   
+                    </div>
+                    <div class = 'xd8 xd'>
+                        <div class="film schindler"></div>
+                        <h2> Schindler List </h2>
+                        <button> <i class="fas fa-plus"> </i> Wishlist </button>
+                        <div class = 'do-something'>
+                            <a href="https://www.youtube.com/watch?v=gG22XNhtnoY"> Trailer Vid </a>
+                            <a onclick = 'toggleBox8()'> Description </a>
+                        </div>
+                    </div>
+                    <div class = 'xd9 xd'>
+                        <div class="film spirited-away"></div>
+                        <h2> Spirited Away </h2>
+                        <button> <i class="fas fa-plus"> </i> Wishlist </button>
+                        <div class = 'do-something'>
+                            <a href="https://www.youtube.com/watch?v=ByXuk9QqQkk"> Trailer Vid </a>
+                            <a onclick = 'toggleBox9()'> Description </a>
+                        </div>
+                    </div>
                 </div>
+        </div>
+    </section>
 
-                <div class="film spider-man" onclick="togglePopup2()">
-                    <h3> Spider Man  </h3>
-                    <p> This is a film </p>
-                </div>
-
-                <div class="film jujutsu-kaisen" onclick="togglePopup3()">
-                    <h3> Jujutsu Kaisen </h3>
-                    <p> This is a film </p>
-                </div>
-
-                <div class="film sao" onclick="togglePopup4()">
-                    <h3> Sword Art Online </h3>
-                    <p> This is a film </p>
-                </div>
-                
-                <div class="film demon-slayer" onclick="togglePopup5()" >
-                    <h3> Demon Slayer </h3>
-                    <p> This is a film </p>
-                </div>
-
-                <div class="film james-bond" onclick="togglePopup6()">
-                    <h3> James-Bond </h3>
-                    <p> This is a film </p>
-                </div>
-
-                <div class="film hospital-playlist" onclick="togglePopup7()">
-                    <h3> Hospital Playlist </h3>
-                    <p> This is a film </p>
-                </div>
-
-                <div class="film tenki-no-ko" onclick="togglePopup8()">
-                    <h3> Weathering with You </h3>
-                    <p> This is a film </p>
+    <section>
+        <div class="details" id = 'box1'>
+            <div class="overlay"></div>
+            <div class="box">
+                <div class="close-btn" onclick="toggleBox1()">&times;</div>
+                <h2> 12 Angry Men </h2>
+                <p class = 'p-pad'> Film 12 Angry Men menceritakan tentang sekelompok juri yang sedang berdebat untuk menentukan apakah terdakwa pantas dinyatakan bersalah atau tidak. Terdakwa adalah seorang anak laki-laki asal Amerika Latin, ia dituduh telah melakukan kasus pembunuhan dengan menusuk ayahnya hingga tewas. </p>
+                <div class="row">
+                    <div class = 'film-sequel angry'> </div>
+                    <div class="stars">
+                        <div>
+                            <p> Rating: </p>
+                        </div>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    
+        <div class="details" id = 'box2'>
+            <div class="overlay"></div>
+            <div class="box">
+                <div class="close-btn" onclick="toggleBox2()">&times;</div>
+                <h2> The Dark Knight </h2>
+                <p class = 'p-pad'> Batman memiliki musuh baru, Joker, otak kriminal yang berambisi menghancurkan Gotham City. Bersama Gordon dan Harvey Dent, Batman harus berjuang untuk menghentikannya sebelum semuanya terlambat. </p>
+                <div class="row">
+                    <div class = 'film-sequel dark-knight'> </div>
+                    <div class="stars">
+                        <div>
+                            <p> Rating: </p>
+                        </div>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <section class="popup" id = "popup-1">
-        <div class="overlay"></div>
-        <div class="main-content">
-            <div class="close-btn1" onclick="togglePopup1()">&times;</div>
-            <h2> Squid-game </h2>
-            <p> Sinopsis: </p>
-            <p> Squid Game menceritakan tentang orang-orang yang harus bertahan hidup paling lama dalam permainan agar bisa mendapatkan hadiah 45,6 miliar won </p>
-            <p> Rating: </p>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
+        <div class="details" id = 'box3'>
+            <div class="overlay"></div>
+            <div class="box">
+                <div class="close-btn" onclick="toggleBox3()">&times;</div>
+                <h2> The Godfather </h2>
+                <p class = 'p-pad'> Seorang pimpinan dinasti organisasi kejahatan yang sudah tua, mengalihkan kendali kerajaan bawah-tanah kepada putranya yang enggan menerimanya. Cast: Marlon Brando, Al Pacino. </p>
+                <div class="row">
+                    <div class = 'film-sequel godfather'> </div>
+                    <div class="stars">
+                        <div>
+                            <p> Rating: </p>
+                        </div>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <div class = 'deskripsi squid-game-alt'> 
-                <p> Deskripsi movie </p>
+        <div class="details" id = 'box4'>
+            <div class="overlay"></div>
+            <div class="box">
+                <div class="close-btn" onclick="toggleBox4()">&times;</div>
+                <h2> Grave of Fireflies </h2>
+                <p class = 'p-pad'> Pada masa Perang Dunia II, film ini berkisah tentang pemuda dan adik perempuannya yang berusaha untuk bertahan hidup setelah terjadi peristiwa pemboman Kobe City. </p>
+                <div class="row">
+                    <div class = 'film-sequel grave-of-fireflies'> </div>
+                    <div class="stars">
+                        <div>
+                            <p> Rating: </p>
+                        </div>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="details" id = 'box5'>
+            <div class="overlay"></div>
+            <div class="box">
+                <div class="close-btn" onclick="toggleBox5()">&times;</div>
+                <h2> Lord of the Ring </h2>
+                <p class = 'p-pad'> Frodo, si hobbit muda, mewarisi sebuah cincin berkekuatan jahat milik Sauron, sang Penguasa Kegelapan. Kini, ia harus memulai perjalanan panjang penuh bahaya menuju Mount Doom demi menghancurkannya. </p>
+                <div class="row">
+                    <div class = 'film-sequel lord'> </div>
+                    <div class="stars">
+                        <div>
+                            <p> Rating: </p>
+                        </div>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="details" id = 'box6'>
+            <div class="overlay"></div>
+            <div class="box">
+                <div class="close-btn" onclick="toggleBox6()">&times;</div>
+                <h2> Matrix </h2>
+                <p class = 'p-pad'>Thomas, seorang programer komputer dan hacker jahat, dipimpin untuk melawan perang bawah tanah melawan komputer kuat yang kini menguasai dunia dengan sistem yang disebut 'The Matrix'. </p>
+                <div class="row">
+                    <div class = 'film-sequel matrix'> </div>
+                    <div class="stars">
+                        <div>
+                            <p> Rating: </p>
+                        </div>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="details" id = 'box7'>
+            <div class="overlay"></div>
+            <div class="box">
+                <div class="close-btn" onclick="toggleBox7()">&times;</div>
+                <h2> Parasite </h2>
+                <p class = 'p-pad'> Keluarga Ki-taek beranggotakan empat orang pengangguran dengan masa depan suram menanti mereka. Suatu hari Ki-woo anak laki-laki tertua direkomendasikan oleh sahabatnya yang merupakan seorang mahasiswa dari universitas bergengsi agar Ki-woo menjadi guru les yang dibayar mahal dan membuka secercah harapan penghasilan tetap. Dengan penuh restu serta harapan besar dari keluarga, Ki-woo menuju ke rumah keluarga Park untuk wawancara. Setibanya di rumah Mr. Park pemilik perusahaan IT global, Ki-woo bertemu dengan Yeon-kyo, wanita muda yang cantik di rumah itu. Setelah pertemuan itu, serangkaian kejadian dimulai. </p>
+                <div class="row">
+                    <div class = 'film-sequel parasite'> </div>
+                    <div class="stars">
+                        <div>
+                            <p> Rating: </p>
+                        </div>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="details" id = 'box8'>
+            <div class="overlay"></div>
+            <div class="box">
+                <div class="close-btn" onclick="toggleBox8()">&times;</div>
+                <h2> Schindler List </h2>
+                <p class = 'p-pad'> Berlatarbelakang Polandia selama Perang Dunia II, Oskar Schindler semakin khawatir dengan keselamatan para tenaga kerja kelahiran Yahudi-nya setelah ia menyaksikan penganiayaan yang dilakukan Nazi. </p>
+                <div class="row">
+                    <div class = 'film-sequel schindler'> </div>
+                    <div class="stars">
+                        <div>
+                            <p> Rating: </p>
+                        </div>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="details" id = 'box9'>
+            <div class="overlay"></div>
+            <div class="box">
+                <div class="close-btn" onclick="toggleBox9()">&times;</div>
+                <h2> Spirited Away </h2>
+                <p class = 'p-pad'> Film animasi karya sutradara ternama Jepang Hayao Miyazaki ini bercerita tentang kisah seorang gadis berumur 10 tahun bernama Chihiro dan kedua orangtuanya yang masuk ke sebuah tempat yang terlihat sebagai sebuah taman hiburan yang terabaikan. Setelah kedua orangtuanya berubah menjadi babi raksasa, Chihiro bertemu dengan sosok misterius Haku yang menjelaskan kepadanya bahwa tempat mereka berada adalah sebuah resort di mana makhluk supernatural berisitrahat dari alam duniawi. Untuk dapat membebaskan kedua orangtuanya, Chihiro harus bekerja di sebuah bath house yang dikepalai oleh penyihir bernama Yubaba. </p>
+                <div class="row">
+                    <div class = 'film-sequel spirited-away'> </div>
+                    <div class="stars">
+                        <div>
+                            <p> Rating: </p>
+                        </div>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="popup" id = "popup-2">
-        <div class="overlay"></div>
-        <div class="main-content">
-            <div class="close-btn2" onclick="togglePopup2()">&times;</div>
-            <h2> Spider Man: No Way Home </h2>
-            <p> Sinopsis: </p>
-            <p> Dengan kepergian Tony Stark, Peter Parker pun harus meminta bantuan Doctor Strange agar semua orang bisa melupakan identitasnya sebagai manusia laba-laba </p>
-            <p> Rating: </p>
 
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-
-            <div class = 'deskripsi spider-man-alt'> 
-                <p> Deskripsi movie </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="popup" id = "popup-3">
-        <div class="overlay"></div>
-        <div class="main-content">
-            <div class="close-btn3" onclick="togglePopup3()">&times;</div>
-            <h2> Jujutsu Kaisen 0 </h2>
-            <p> Sinopsis: </p>
-            <p> Yuuta Okkotsu, seorang pemuda yang duduk di bangku SMA. Di sekolah, ia kerap merasa gugup karena menderita masalah serius, sebab kekasih masa kecilnya yaitu Rika, telah berubah menjadi kutukan yang tidak mau meninggalkannya sendirian. </p>
-
-            <p> Rating: </p>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-
-            <div class = 'deskripsi jujutsu-kaisen-alt'> 
-                <p> Deskripsi movie </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="popup" id = "popup-4">
-        <div class="overlay"></div>
-        <div class="main-content">
-            <div class="close-btn4" onclick="togglePopup4()">&times;</div>
-            <h2> Sword Art Online: Progressive </h2>
-            <p> Sinopsis: </p>
-            <p> Film ini mengambil latar belakang masa depan pada tahun 2022. Sosok Akihiko Kayaba yang menciptakan sebuah virtual reality massively multiplayer online role-playing game. Dalam hal ini ada sebuah mesin Nerve gear yang merupakan helm Full Drive generasi kedua. </p>
-
-            <p> Rating: </p>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-
-            <div class = 'deskripsi sao-alt'> 
-                <p> Deskripsi movie </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="popup" id = "popup-5">
-        <div class="overlay"></div>
-        <div class="main-content">
-            <div class="close-btn5" onclick="togglePopup5()">&times;</div>
-            <h2> Demon Slayer: Mugen Train </h2>
-            <p> Sinopsis: </p>
-            <p> Tanjiro Kamado, Inosuke Hashibira, dan Zenitsu Agatsuma sedang di dalam Kereta Infinity dalam misi baru dengan Pilar Api, Kyojuro Rengoku demi mengalahkan iblis yang telah menyiksa orang-orang dan membunuh pembunuh iblis yang menentangnya! </p>
-
-            <p> Rating: </p>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-
-            <div class = 'deskripsi demon-slayer-alt'> 
-                <p> Deskripsi movie </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="popup" id = "popup-6">
-        <div class="overlay"></div>
-        <div class="main-content">
-            <div class="close-btn6" onclick="togglePopup6()">&times;</div>
-            <h2> James Bond: No Time To Die </h2>
-            <p> Sinopsis: </p>
-            <p> James Bond yang sudah pensiun terinterupsi oleh Felix Leiter, teman lamanya yang muncul dan meminta bantuannya. Misi menyelamatkan seorang ilmuwan yang diculik ternyata lebih berisiko dari dugaan, menghantarkan Bond pada jejak seorang penjahat misterius bersenjatakan teknologi baru nan mematikan. </p>
-
-            <p> Rating: </p>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-
-
-            <div class = 'deskripsi james-bond-alt'> 
-                <p> Deskripsi movie </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="popup" id = "popup-7">
-        <div class="overlay"></div>
-        <div class="main-content">
-            <div class="close-btn7" onclick="togglePopup7()">&times;</div>
-            <h2> Hospital Playlist </h2>
-            <p> Sinopsis: </p>
-            <p> Hospital Playlist bercerita tentang lima dokter yang telah berteman sejak mereka memasuki sekolah kedokteran pada tahun 1999. </p>
-
-            <p> Rating: </p>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-
-            <div class = 'deskripsi hospital-playlist-alt'> 
-                <p> Deskripsi movie </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="popup" id = "popup-8">
-        <div class="overlay"></div>
-        <div class="main-content">
-            <div class="close-btn8" onclick="togglePopup8()">&times;</div>
-            <h2> Weathering with you </h2>
-            <p> Sinopsis: </p>
-            <p> Tenki no Ko bercerita tentang seorang anak laki-laki dan perempuan yang mengetahui bahwa takdirnya menjadi berantakan saat keseimbangan cuaca menjadi kacau. Hotaka Morisaki, siswa SMA yang berlari keluar rumahnya dari sebuah pulau terpencil di Jepang, bertemu seorang gadis bernama Hira Amano. </p>
-
-            <p> Rating: </p>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-
-            <div class = 'deskripsi tenki-no-ko-alt'> 
-                <p> Deskripsi movie </p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-sect"> Made by: Alvaro Austin </div>
-    </footer>
 </body>
-
-<script src="./main.js"></script>
+<script src="main.js"></script>
+</html>

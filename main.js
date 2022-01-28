@@ -1,31 +1,57 @@
-function togglePopup1(){
-    document.getElementById("popup-1").classList.toggle("active");
+const nodes = document.querySelectorAll('.a');
+nodes.forEach((node) => {
+  node.addEventListener('click', (e) => {
+    nodes.forEach(ele => {
+      if(ele === e.target){
+        ele.style.color = '#6ABCEA'
+      } else {
+        ele.style.color = 'white'
+      }
+    })
+  })
+})
+
+function toggleBox1(){
+    document.getElementById('box1').classList.toggle('active')
+    document.body.classList.toggle('active')
 }
 
-function togglePopup2(){
-    document.getElementById("popup-2").classList.toggle("active");
+function toggleBox2(){
+    document.getElementById('box2').classList.toggle('active')
+    document.body.classList.toggle('active')
 }
 
-function togglePopup3(){
-    document.getElementById("popup-3").classList.toggle("active");
+function toggleBox3(){
+    document.getElementById('box3').classList.toggle('active')
+    document.body.classList.toggle('active')
 }
 
-function togglePopup4(){
-    document.getElementById("popup-4").classList.toggle("active");
+function toggleBox4(){
+    document.getElementById('box4').classList.toggle('active')
+    document.body.classList.toggle('active')
 }
 
-function togglePopup5(){
-    document.getElementById("popup-5").classList.toggle("active");
+function toggleBox5(){
+    document.getElementById('box5').classList.toggle('active')
+    document.body.classList.toggle('active')
 }
 
-function togglePopup6(){
-    document.getElementById("popup-6").classList.toggle("active");
+function toggleBox6(){
+    document.getElementById('box6').classList.toggle('active')
+    document.body.classList.toggle('active')
 }
 
-function togglePopup7(){
-    document.getElementById("popup-7").classList.toggle("active");
+function toggleBox7(){
+    document.getElementById('box7').classList.toggle('active')
+    document.body.classList.toggle('active')
 }
 
-function togglePopup8(){
-    document.getElementById("popup-8").classList.toggle("active");
+function toggleBox8(){
+    document.getElementById('box8').classList.toggle('active')
+    document.body.classList.toggle('active')
+}
+
+function toggleBox9(){
+    document.getElementById('box9').classList.toggle('active')
+    document.body.classList.toggle('active')
 }
